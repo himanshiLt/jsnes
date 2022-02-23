@@ -1,0 +1,15 @@
+---
+framework: mocha
+preRun:
+     command:
+        - yarn install
+preMerge:
+  pattern:
+    - "./test/*.spec.js"
+postMerge:
+  pattern: 
+    - "./test/*.spec.js"
+postRun:
+     command:
+        - yarn --version
+version: 1.0
